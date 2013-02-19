@@ -8,9 +8,9 @@ Gem::Specification.new do |gem|
   gem.version       = Provideous::VERSION
   gem.authors       = ["jsk"]
   gem.email         = ["knomedia@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{Ruby CLI for quickly creating a one off video page}
+  gem.summary       = %q{Ruby CLI for quickly creating a one off video page}
+  gem.homepage      = "https://github.com/knomedia/provideous"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
