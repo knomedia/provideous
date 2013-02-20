@@ -1,16 +1,37 @@
 # Provideous
 
-Provideous is a command line application that will quickly create a one off video page. I use it to quick create a page that I can drop on the web (or drop box for that matter) to share quick screen casts I've made with other remote team members. By default it uses [`videously`](https://github.com/knomedia/videously) to compress and normalize the video.
+Provideous is a command line application that will quickly create a one off video page. I use it to quickly create a page that I can drop on the web (or drop box for that matter) to share quick screen casts I've made with other remote team members. By default it uses [`videously`](https://github.com/knomedia/videously) to compress and normalize the video.
 
 ## Installation
 
 Install it with:
 
-    $ gem install provideous
+```bash
+$ gem install provideous
+```
 
 ## Usage
 
-Videously is just getting under way, for the latest instructions, check the `development` branch
+### Creating a project
+
+```bash
+$ provideous projectname videofile
+```
+
+This will do the following:
+
+* Create a directory named `projectname`
+* Copy `videofile` into the directory
+* Run `videously` on `videofile` to create an H.264 main profile, normalized audio version of the file (see note below)
+* Create a single, responsive page (using [`Zurb Foundation 3`](http://foundation.zurb.com/) )
+* Create a filenamed "css/app.css" for you to customize the look of the page
+* Open the page for you to preview
+
+#### Videously note
+Optionally you can pass `-s` as a third parameter. Doing so will skip the use of `videously` to compress and normalize the video
+
+
+
 
 ## Contributing
 
