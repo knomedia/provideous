@@ -29,7 +29,7 @@ This will do the following:
 * Open the page for you to preview
 
 #### Videously note
-Optionally you can pass `-s` as a third parameter. Doing so will skip the use of `videously` to compress and normalize the video
+Optionally you can pass `-s` as a third parameter. Doing so will skip the use of `videously` to compress and normalize the video. If you don't have `videously` installed, you will need to pass the `-s` and ensure your video is ready for the web.
 
 
 
