@@ -23,8 +23,9 @@ This will do the following:
 * Create a directory named `projectname`
 * Copy `videofile` into the directory
 * Run `videously` on `videofile` to create an H.264 main profile, normalized audio version of the file (see note below)
+* Create a screen-capture of `videofile` (at approx. 1 second) to use as a poster for the video
 * Create a single, responsive page (using [`Zurb Foundation 3`](http://foundation.zurb.com/) )
-* Create a filenamed "css/app.css" for you to customize the look of the page
+* Create a filenamed `css/app.css` for you to customize the look of the page
 * Open the page for you to preview
 
 #### Videously note
