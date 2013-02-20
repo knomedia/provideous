@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+
+require 'provideous'
+p = Provideous::Builder.new
+
+if ARGV.length >= 2
+  options = {}
+  options[:project] = ARGV[0]
+  options[:vid_file] = ARGV[1]
+  if ARGV[2]
+    options[:skip] = true unless ARGV[2] != "-s"
+  end
+
+  p.create_project options
+
+else
+  p.print_usage
+end
+
