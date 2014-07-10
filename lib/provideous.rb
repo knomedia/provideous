@@ -1,7 +1,6 @@
 require "provideous/version"
 require 'fileutils'
 require 'erb'
-require 'pry'
 
 module Provideous
   attr_accessor :options
